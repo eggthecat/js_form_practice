@@ -6,31 +6,32 @@
     <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <meta charset="utf-8">
-    <title>Practice</title>
+    <title>Shout</title>
   </head>
   <body>
     <div class="container">
-      <h1>Enter Information</h1>
-      <div>
-        <form id="form1">
-          <div class="form-group">
-            <label for="name">name</label>
-            <input id="name" class="form-control" type="text">
+      <h1 id="directory"></h1>
+      <ul>
+        <li>Mad Libs</li>
+        <li>Form Letter</li>
+        <li>Shout Machine Project</li>
+        <div id="shoutMachineProject">
+          <div>
+            <form id="shoutMachine">
+              <div class="form-group">
+                <label for="shoutWord">Enter word to shout</label>
+                <input id="shoutWord" class="form-control" type="text">
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="city">city</label>
-            <input id="city" class="form-control" type="text">
+          <div id="shoutResult">
+            <h1>Shout done</h1>
+            <output name="result"></output>
+            <p><span class="shoutWord"></span></p>
           </div>
-          <button type="submit" class="btn">Submit</button>
-        </form>
-      </div>
-      <div id="profile">
-        <h1>Profile</h1>
-        <ul>
-          <li><span class="name"></span></li>
-          <li><span class="city"></span></li>
-        </ul>
-      </div>
+        </div>
+      </ul>
+
     </div>
   </body>
 </html>

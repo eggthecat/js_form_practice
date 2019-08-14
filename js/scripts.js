@@ -1,15 +1,11 @@
-// back-end
-// front-end
-$(document).ready(function(){
-  $("#form1").submit(function(event){
-    var nameInput = $("input#name").val();
-    var cityInput = $("input#city").val();
+$(document).ready(function() {
+  $("#shoutMachine").submit(function(event) {
+    var shoutWordInput = $("input#shoutWord").val().toUpperCase();
 
-    $(".name").text(nameInput);
-    $(".city").text(cityInput);
+    $(".shoutWord").text(shoutWordInput);
 
-    $("#profile").show();
+    $("#shoutResult").show();
 
     event.preventDefault();
-  });
-});
+  })
+})
